@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>sign up page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="background">
+ 
+  <ion-card>
+  <ion-card-header>
+     sign up
+  </ion-card-header>
+  <ion-card-content>
+  
+<ion-item>
+    <ion-input type="text" [(ngModel)]="user.email" placeholder="Email address"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password"[(ngModel)]="user.password" placeholder="Password"></ion-input>
+  </ion-item>
+
+<button ion-button full (click)="register(user)">Register</button>
+<button ion-button full (click)="login()">Back to Login Pge</button>
+ </ion-card-content>
+ </ion-card>
+
+
+</ion-content>
